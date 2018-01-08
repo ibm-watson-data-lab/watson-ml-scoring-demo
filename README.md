@@ -31,15 +31,15 @@ WML_DEPLOYMENT_ID=
 ```
 
 2. Fill in username, password, and instance ID using the credentials in your IBM Watson Machine Learning service
- a. Go to the service in your IBM Cloud instance
- b. Click _Service Credentials_
- c. Expand your credentials
+  - Go to the service in your IBM Cloud instance
+  - Click _Service Credentials_
+  - Expand your credentials
 
 3. Fill in your model ID and deployment ID
- a. Go to your model under the Assets in your Data Science Platform or Watson Data Platform account
- b. Click the _Deployments_ tab
- c. Click the deployment
- d. Copy and paste the Deployment ID and Model ID values
+  - Go to your model under the Assets in your Data Science Platform or Watson Data Platform account
+  - Click the _Deployments_ tab
+  - Click the deployment
+  - Copy and paste the Deployment ID and Model ID values
 
 ## Run in IBM Cloud
 
@@ -70,9 +70,9 @@ env:
   - Replace `IBM Watson Machine Learning` under *services:* with the name of the Watson Machine Learning service provisioned in your account
 
 3. Fill in your model ID and deployment ID
- a. Go to your model under the Assets in your Data Science Platform or Watson Data Platform account
- b. Click the _Deployments_ tab
- c. Click the deployment
- d. Copy and paste the Deployment ID and Model ID values to the environment variables under *env:*
+  - Go to your model under the Assets in your Data Science Platform or Watson Data Platform account
+  - Click the _Deployments_ tab
+  - Click the deployment
+  - Copy and paste the Deployment ID and Model ID values to the environment variables under *env:*
 
 
