@@ -1,0 +1,15 @@
+applications:
+- path: .
+  buildpack: sdk-for-nodejs
+  no-route: false
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: watson-ml-scoring-demo
+  host: watson-ml-scoring-demo-${random-word}
+disk_quota: 256M
+services:
+ - IBM Watson Machine Learning
+env:
+  WML_MODEL_ID: xxx
+  WML_DEPLOYMENT_ID: xxx
