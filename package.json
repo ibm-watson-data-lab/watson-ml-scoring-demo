@@ -11,6 +11,7 @@
     "cfenv": "^1.0.4",
     "debug": "~2.6.9",
     "dotenv": "^4.0.0",
-    "express": "~4.15.5"
+    "express": "~4.15.5",
+    "watson-ml-scoring-util": "0.0.1"
   }
 }
