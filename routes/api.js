@@ -3,7 +3,7 @@ const router = express.Router();
 const { WatsonMLScoringEndpoint } = require("watson-ml-scoring-util");
 const watsonMLScoringEndpoint = new WatsonMLScoringEndpoint(['SquareFeet', 'Bedrooms']);
 
-router.post('/getHousePrice', function(req, res, next) {
+router.post('/predictHousePrice', function(req, res, next) {
   watsonMLScoringEndpoint.score([req.body.squareFeet, req.body.numBedrooms])
     .then((predictions) => {
       res.json({
@@ -12,7 +12,7 @@ router.post('/getHousePrice', function(req, res, next) {
       });
     })
     .catch((err) => {
-      response.json({ok: false});
+      res.json({ok: false});
     });
 });
 
