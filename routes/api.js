@@ -5,10 +5,10 @@ const watsonMLScoringEndpoint = new WatsonMLScoringEndpoint(['SquareFeet', 'Bedr
 
 router.post('/predictHousePrice', function(req, res, next) {
   watsonMLScoringEndpoint.score([req.body.squareFeet, req.body.numBedrooms])
-    .then((predictions) => {
+    .then((response) => {
       res.json({
         ok: true,
-        price: predictions
+        price: response.prediction
       });
     })
     .catch((err) => {

@@ -21,10 +21,10 @@ let endpoint = new WatsonMLScoringEndpoint(['SquareFeet', 'Bedrooms']);
 
 // Running a single prediction
 endpoint.score([2400, 4])
-    .then(predictions => console.log(predictions))
-    .catch(e => console.log(e));
+  .then(response => console.log(response.prediction))
+  .catch(e => console.log(e));
 
 // Running multiple predictions at once
 endpoint.scoreMulti([[2400, 4], [2000, 3], [2600, 6]])
-    .then(predictions => console.log(predictions))
-    .catch(e => console.log(e));
+  .then(response => console.log(response.predictions))
+  .catch(e => console.log(e));
