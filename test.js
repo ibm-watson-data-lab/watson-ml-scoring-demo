@@ -1,4 +1,4 @@
-const { WatsonMLScoringEndpoint } = require("watson-ml-scoring-util");
+const { WatsonMLScoringEndpoint } = require("watson-ml-model-utils");
 
 // Example specifying all values
 // let endpoint = new WatsonMLScoringEndpoint(['SquareFeet', 'Bedrooms'], {
